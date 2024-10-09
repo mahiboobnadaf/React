@@ -6,9 +6,12 @@
     <title>React using CDN</title>
 </head>
 <body>
-    <div id="root">    
+    <!-- <div id="root">    
         <h1>Mahiboob</h1>    
-         <!-- <div><h2>Mahiboob</h2></div> -->
+    </div> -->
+   
+    <div id="root">
+        
     </div>
 
     
@@ -17,12 +20,26 @@
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script>
-    const headingTag = React.createElement("h1",{id:"greeting"},"Well come to React ,Mahiboob")
-    console.log(headingTag)
+    // const headingTag = React.createElement("h1",{id:"greeting"},"Well come to React ,Mahiboob")
+    // console.log(headingTag)
     const root = ReactDOM.createRoot(document.getElementById("root"));
 
+    const heading1 = React.createElement("h1",{
+        id:"heading1"
+    },"Heading 1");
+
+    const heading2 = React.createElement("h2",{
+        id:"heading2"
+    },"Heading 2")
+
+    const container = React.createElement("h1",{
+        id:"container"
+    },[heading1,heading2])
+
     //Passing a React element (headtingTag) inside root
-    root.render(headingTag);
+    // root.render(headingTag);
+
+    root.render(container)
 </script>
 
 
