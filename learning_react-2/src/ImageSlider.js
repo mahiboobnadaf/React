@@ -16,7 +16,7 @@ const ImageSlider = () =>{
     }
 
     function next(){
-        setActive((active+1) % data.length);
+        (active != data.length-1) ? setActive(active+1) : setActive(0);
     }
 
     useEffect(()=>{
