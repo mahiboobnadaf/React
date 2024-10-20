@@ -33,7 +33,7 @@ const ImageSlider = () =>{
             </div>
 
         </div>
-        <div className="flex justify-center p-10 gap-5">
+        <div className="flex justify-center p-10 gap-5 font-bold">
             <button className=' text-black p-4 bg-slate-500' onClick={previous} > Previous </button>
             <button className=' text-black p-4 bg-slate-500' onClick={next}> Next </button>
         </div>
