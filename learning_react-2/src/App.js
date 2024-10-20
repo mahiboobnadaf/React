@@ -16,7 +16,7 @@ function App(props) {
           <h1 > {name} from {props.country} </h1>
           <h2> {name2} from {props.country} </h2>
 
-      <button className=' bg-black text-pink-500 p-3' onClick={changeName}> Change </button>
+      <button className=' bg-black text-pink-500 p-3 rounded-lg' onClick={changeName}> Change </button>
 
 
     </div>
